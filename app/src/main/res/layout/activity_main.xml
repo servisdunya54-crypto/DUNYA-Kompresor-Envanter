@@ -14,8 +14,7 @@
         android:layout_height="match_parent"
         android:background="#071827"
         android:src="@drawable/splash"
-        android:scaleType="centerInside"
-        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         android:contentDescription="DÜNYA Kompresör" />
 
 </FrameLayout>
