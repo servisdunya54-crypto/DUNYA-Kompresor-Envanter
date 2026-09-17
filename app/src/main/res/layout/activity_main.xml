@@ -12,9 +12,10 @@
         android:id="@+id/splashImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
+        android:background="#071827"
         android:src="@drawable/splash"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
         android:contentDescription="DÜNYA Kompresör" />
 
 </FrameLayout>
