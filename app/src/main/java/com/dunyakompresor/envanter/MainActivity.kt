@@ -21,7 +21,7 @@ class MainActivity : Activity() {
             splashImage.animate().alpha(0f).setDuration(500).withEndAction {
                 splashImage.visibility = android.view.View.GONE
             }.start()
-        }, 3000)
+        }, 5000)
         webView = findViewById(R.id.webView)
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
