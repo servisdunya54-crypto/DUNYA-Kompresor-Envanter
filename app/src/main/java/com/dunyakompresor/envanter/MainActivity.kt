@@ -16,6 +16,12 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val splashImage = findViewById<android.widget.ImageView>(R.id.splashImage)
+        splashImage.postDelayed({
+            splashImage.animate().alpha(0f).setDuration(500).withEndAction {
+                splashImage.visibility = android.view.View.GONE
+            }.start()
+        }, 3000)
         webView = findViewById(R.id.webView)
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
